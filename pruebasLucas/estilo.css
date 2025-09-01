@@ -108,11 +108,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     font-weight: 900;
-    background-color: gray;
+    background-color: #808080;
+    margin: 1rem;
 }
 
 .versus-container{
     background-color: #A0E7E5;
+    padding: 1rem;
 }
 
 .versus-container img{
@@ -129,6 +131,8 @@ body{
 .coldplay{
     display: flex;
     flex-direction: row;
+    background-color: #808080;
+    margin: 1rem;
 }
 
 .coldplay h3{
@@ -144,6 +148,8 @@ body{
 .velvet{
     display: flex;
     flex-direction: row;
+    background-color: #808080;
+    margin: 1rem;
 }
 
 .velvet h3{
