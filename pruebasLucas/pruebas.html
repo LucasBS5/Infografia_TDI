@@ -15,48 +15,91 @@
                 <p>Papelera</p>
             </div>
                 <div class="icon-item">
-                    <img class="icon__item" id="navegador" src="icon/chrome.ico" alt="">
+                    <img class="icon__item aplicaciones" data-ventana="navegador" src="icon/chrome.ico" alt="">
                     <p>Chrome</p>
                 </div>
                 <div class="icon-item">
-                    <img class="icon__item" id="juego" src="icon/minecraft.ico" alt="">
+                    <img class="icon__item aplicaciones" data-ventana="juego" src="icon/minecraft.ico" alt="">
                     <p>Juego</p>
                 </div>
                 <div class="icon-item">
-                    <img class="icon__item" id="calendario" src="icon/calendar.ico" alt="">
+                    <img class="icon__item aplicaciones" data-ventana="calendar" src="icon/calendar.ico" alt="">
                     <p>Calendario</p>
                 </div>
                 <div class="icon-item">
-                    <img class="icon__item" id="ig" src="icon/world.ico" alt="">
+                    <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
                     <p>Instagram</p>
                 </div>
                 <div class="icon-item">
-                    <img class="icon__item" id="suno" src="icon/world.ico" alt="">
+                    <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
                     <p>Suno Ai</p>
                 </div>
                 <div class="icon-item">
-                    <img class="icon__item" id="udio" src="icon/world.ico" alt="">
+                    <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
                     <p>Udio Ai</p>
                 </div>
         </div>
         <div class="icons-right">
             <div class="icon-item">
-                <img class="icon__item" id="bandlab" src="icon/world.ico" alt="">
+                <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
                 <p>Bandlab</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item" id="musica" src="icon/music.ico" alt="">
+                <img class="icon__item aplicaciones" data-ventana="musica" src="icon/music.ico" alt="">
                 <p>Musica</p>
             </div>
         </div>
     </div>
 
-    <div class="ventana" id="ventana">
-        <div class="titulo-barra" id="barra"> 
+    <div class="ventana" data-ventana="navegador">
+        <div class="titulo-barra barra">
+            <h5>Navegador</h5>
             <div class="controles-barra">
-                <button class="controles__item">—</button>
-                <button class="controles__item">☐</button>
-                <button class="controles__item" id="close-btn">✕</button>
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
+            </div>  
+        </div>
+        <div class="ventana-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+        </div>
+    </div>
+
+    <div class="ventana" data-ventana="juego">
+        <div class="titulo-barra barra">
+            <h5>Juego</h5>
+            <div class="controles-barra">
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
+            </div>  
+        </div>
+        <div class="ventana-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+        </div>
+    </div>
+
+    <div class="ventana" data-ventana="calendar">
+        <div class="titulo-barra barra">
+            <h5>Calendario</h5>
+            <div class="controles-barra">
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
+            </div>  
+        </div>
+        <div class="ventana-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+        </div>
+    </div>
+
+    <div class="ventana" data-ventana="musica">
+        <div class="titulo-barra barra">
+            <h5>Musica</h5>
+            <div class="controles-barra">
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
             </div>  
         </div>
         <div class="ventana-body">

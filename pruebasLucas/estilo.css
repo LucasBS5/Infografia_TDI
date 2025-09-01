@@ -10,6 +10,7 @@ html{
 }
 
 body{
+    overflow: hidden;
     margin: 1vh 2vw;
     background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
     line-height: 1.6;
@@ -52,11 +53,35 @@ body{
     border: 3px inset gray;
 }
 
+.ventana[data-ventana="navegador"] {
+    background: blue;
+}
+
+.ventana[data-ventana="juego"] {
+    background: red;
+}
+
+.ventana[data-ventana="calendar"] {
+    background: yellow;
+}
+
+.ventana[data-ventana="musica"] {
+    background: green;
+}
+
 .titulo-barra{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
+    padding: 0 0 0 0.5rem;
     background-color: gray;
+}
+
+.titulo-barra h5{
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
 }
 
 .controles-barra{
@@ -85,25 +110,25 @@ body{
 }
 
 .taskbar-izq {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .inicio {
-  background: linear-gradient(#fff, #c0c0c0);
-  border: 1px solid #808080;
-  padding: 2px 10px;
-  cursor: pointer;
+    background: linear-gradient(#fff, #c0c0c0);
+    border: 1px solid #808080;
+    padding: 2px 10px;
+    cursor: pointer;
 }
 
 .taskbar-apps {
-  display: flex;
-  gap: 5px;
+    display: flex;
+    gap: 5px;
 }
 
 .taskbar-der {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
