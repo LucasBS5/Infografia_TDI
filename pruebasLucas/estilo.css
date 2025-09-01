@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 16px; /*esto son 16 px para un mejor control con las medidas relativas*/
+    font-size: 16px; 
     scroll-behavior: smooth;
 }
 
@@ -14,6 +14,8 @@ body{
     background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
     line-height: 1.6;
 }
+
+/* ---------- ESTILOS DE LOS ICONOS DE PROGRAMAS ---------- */
 
 .icons{
     display: flex;
@@ -40,32 +42,18 @@ body{
     margin-top: 1rem;
 }
 
+/* ---------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
+
 .ventana{
     display: none;
     position: absolute;
     width: 80%;
     background-color: #fff;
+    border: 4px inset #222222;
 }
 
 .ventana-body{
     padding: 1rem;
-    border: 3px inset #222222;
-}
-
-.ventana[data-ventana="navegador"] {
-    background: #e9eae7;
-}
-
-.ventana[data-ventana="juego"] {
-    background: red;
-}
-
-.ventana[data-ventana="calendar"] {
-    background: yellow;
-}
-
-.ventana[data-ventana="musica"] {
-    background: green;
 }
 
 .titulo-barra{
@@ -86,6 +74,14 @@ body{
 .controles-barra{
     display: flex;
     align-items: center;
+    gap: 0;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL NAVEGADOR ---------- */
+
+.ventana[data-ventana="navegador"] {
+    background: #e9eae7;
+    overflow-y: scroll;
 }
 
 .controles__item{
@@ -97,8 +93,15 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: gray;
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.buscador .url{
+    background-color: #e9eae7;
+    padding: 0.2rem;
 }
 
 .titulo-versus{
@@ -162,6 +165,26 @@ body{
     font-size: 1rem;
 }
 
+/* ---------- ESTILOS DE LA VENTANA DEL JUEGO ---------- */
+
+.ventana[data-ventana="juego"] {
+    background: red;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
+
+.ventana[data-ventana="calendar"] {
+    background: yellow;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL REPRODUCTOR ---------- */
+
+.ventana[data-ventana="musica"] {
+    background: green;
+}
+
+/* ---------- ESTILOS DE LA BARRA DE TAREAS ---------- */
+
 .taskbar {
     position: fixed;
     bottom: 0;
@@ -170,7 +193,7 @@ body{
     height: 40px;
     background: #c0c0c0;
     display: flex;
-    justify-content: space-between;  /* Separar izquierda y derecha */
+    justify-content: space-between; 
     align-items: center;
     padding: 0 10px;
     border-top: 2px solid #fff;
