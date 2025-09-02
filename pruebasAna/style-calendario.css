@@ -1,0 +1,45 @@
+/* ---------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
+
+.ventana{
+    /* display: none; */
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: 3px inset #222222;
+}
+
+.dato{
+    padding: 1rem;
+}
+
+.titulo-barra{
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+    background-color: #193887;
+}
+
+.titulo-barra h5{
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #e9eae7;
+}
+
+.controles-barra{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
+
+.ventana[data-ventana="calendario"] {
+    background: yellow;
+    width: 414px;
+    height: 609px;
+}
