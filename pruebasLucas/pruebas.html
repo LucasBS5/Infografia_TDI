@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+    <!---------- ICONOS DE ESCRITORIO (APLICACIONES) ---------->
+
     <div class="icons">
         <div class="icons-left">
             <div class="icon-item">
@@ -51,6 +53,8 @@
         </div>
     </div>
 
+    <!---------- APLICACIÓN DE NAVEGADOR (INTERNET EXPLORER) ---------->
+
     <div class="ventana" data-ventana="navegador">
         <div class="titulo-barra barra">
             <h5>Navegador</h5>
@@ -84,9 +88,19 @@
                         <a href="">Ver más...</a>
                     </div>
                 </div>
+                <div class="velvet">
+                    <img src="../img/artist.jpg" alt="">
+                    <div class="texto-comparacion">
+                        <h3>IA VS HUMANO</h3>
+                        <h5>Comparación de cuánto tiempo invierte un artista que utiliza IA en la creación de música con uno que no, qué cantidad de música produce en cierto tiempo y las limitaciones de cada grupo y sus fortalezas.</h5>
+                        <a href="">Ver más...</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!---------- APLICACIÓN DE JUEGO ---------->
 
     <div class="ventana" data-ventana="juego">
         <div class="titulo-barra barra">
@@ -102,6 +116,8 @@
         </div>
     </div>
 
+    <!---------- APLICACIÓN CALENDARIO ---------->
+
     <div class="ventana" data-ventana="calendar">
         <div class="titulo-barra barra">
             <h5>Calendario</h5>
@@ -116,7 +132,9 @@
         </div>
     </div>
 
-    <div class="ventana" data-ventana="musica">
+    <!---------- APLICACIÓN MÚSICA ---------->
+
+    <!--<div class="ventana" data-ventana="musica">
         <div class="titulo-barra barra">
             <h5>Musica</h5>
             <div class="controles-barra">
@@ -128,7 +146,51 @@
         <div class="ventana-body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
         </div>
+    </div>-->
+
+    <audio id="player" preload="auto">
+        <source src="musica/avril-lavigne-sk8er-boi.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="ventana" data-ventana="musica">
+        <div class="titulo-barra barra">
+            <div class="title-bar-text">
+                <img src="https://images2.imgbox.com/42/89/JIRoQjUo_o.png" alt="CD Icon"/>
+                Música
+            </div>
+            <div class="controles-barra">
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
+            </div>
+        </div>
+        <div class="ventana-body">
+            <p class="toptoptop"><span><u>D</u>isc</span> <span><u>V</u>iew</span> <span><u>O</u>ptions</span> <span><u>H</u>elp</span></p>
+            <p id="text2">[00] 00:00</p>
+            <div class="buttontos">
+                <p id="butt" onclick="document.getElementById('player').play()">▶ </p>
+                <p id="butt" style="min-width:20px;max-width:20px;margin-inline:0px" onclick="document.getElementById('player').pause()">❚❚</p>
+                <p id="butt" style="min-width:20px;max-width:20px" onclick="document.getElementById('player').pause()"><span>◼</span> </p>
+                <p id="butt" style="min-width:20px;max-width:20px;margin-top:5px">❚◄◄ </p>
+                <p id="butt" style="min-width:20px;max-width:20px;margin-top:5px;margin-left:0px">◄◄ </p>
+                <p id="butt" style="min-width:20px;max-width:20px;margin-top:5px;margin-left:0px">►► </p>
+                <p id="butt" style="min-width:20px;max-width:20px;margin-top:5px;margin-left:0px">►►❚ </p>
+                <p id="butt" style="min-width:20px;max-width:20px;margin-top:5px;margin-left:0px"><span>❚ ►</span></p>
+            </div>
+            <div class="ahhh">
+                <p id="label"><u>A</u>rtist:</p>
+                <p id="text" class="artist"></p>
+                <p id="label">Title:</p>
+                <p id="text" class="title"></p>
+            </div>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Total Play: 00:00 m:s</p>
+            <p class="status-bar-field">Track: 00:00 m:s</p>
+        </div>
     </div>
+
+    <!---------- BARRA DE TAREAS ---------->
 
     <div class="taskbar">
         <div class="taskbar-izq">

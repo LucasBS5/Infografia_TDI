@@ -13,6 +13,7 @@ body{
     margin: 1vh 2vw;
     background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
     line-height: 1.6;
+    overflow: hidden;
 }
 
 /* ---------- ESTILOS DE LOS ICONOS DE PROGRAMAS ---------- */
@@ -48,8 +49,8 @@ body{
     display: none;
     position: absolute;
     width: 80%;
-    background-color: #fff;
-    border: 4px inset #222222;
+    background-color: silver;
+    border: 3px inset #222222;
 }
 
 .ventana-body{
@@ -57,6 +58,9 @@ body{
 }
 
 .titulo-barra{
+    position: sticky;
+    top: 0; 
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -80,7 +84,7 @@ body{
 /* ---------- ESTILOS DE LA VENTANA DEL NAVEGADOR ---------- */
 
 .ventana[data-ventana="navegador"] {
-    background: #e9eae7;
+    max-height: 600px;
     overflow-y: scroll;
 }
 
@@ -100,6 +104,8 @@ body{
 }
 
 .buscador .url{
+    font-family: Times;
+    font-size: 1rem;
     background-color: #e9eae7;
     padding: 0.2rem;
 }
@@ -126,9 +132,9 @@ body{
 }
 
 .texto-comparacion{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .coldplay{
@@ -179,9 +185,43 @@ body{
 
 /* ---------- ESTILOS DE LA VENTANA DEL REPRODUCTOR ---------- */
 
-.ventana[data-ventana="musica"] {
-    background: green;
+.ventana[data-ventana="musica"]{
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------- ESTILOS DE LA BARRA DE TAREAS ---------- */
 
