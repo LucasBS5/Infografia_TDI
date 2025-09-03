@@ -56,4 +56,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // ---------- ABRIR PAGINAS DENTRO DEL NAVEGADOR ----------
+
+    const links = document.querySelectorAll('.ventana .cambio-btn');
+
+    links.forEach(link => {
+    link.addEventListener('click', () => {
+    const ventana = link.closest('.ventana'); // la ventana actual
+    const paginas = ventana.querySelectorAll('.pagina');
+
+    // Ocultar todas las páginas dentro de la ventana
+    paginas.forEach(p => p.style.display = 'none');
+
+    // Buscar el destino en el data-pagina o en el id
+    const destino = link.dataset.pagina || 'about'; 
+    const paginaDestino = ventana.querySelector(`#pagina-${destino}`);
+
+    if (paginaDestino) {
+    paginaDestino.style.display = 'block';
+    }
+    });
+});
 });
