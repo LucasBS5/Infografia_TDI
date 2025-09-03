@@ -2,13 +2,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-calendario.css">
     <title>Calendario</title>
 </head>
 <body>
-    <div class="ventana" id="calendar">
+    <div class="ventana" data-ventana="calendario" id="calendar">
     <div class="barra-nav"></div>
-    <div class="año"></div>
-    <div class="dato"></div>
+    <div class="contenido-calendario" id="contenido-calendario">
+        <div class="control-año" data-control="izquierda"></div>
+        <div class="control-año" data-control="derecha"></div>
+        <div class="año"></div>
+        <div class="dato">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+        </div>
     </div>
+    
+    </div>
+    <script src="script-calendario.js"></script>
 </body>
 </html>
