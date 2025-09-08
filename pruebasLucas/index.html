@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+
     <!---------- ICONOS DE ESCRITORIO (APLICACIONES) ---------->
 
     <div class="icons">
@@ -148,8 +156,24 @@
             <h4>Escuchá con mucha atención y adiviná cual es el real</h4>
             <div id="questionbox" class="question">
                 <span id="questiontext"></span>
-                <button id="check-ia">ES UNA IA</button>
-                <button id="check-humano">ES UN HUMANO</button>
+                <div class="juego-opciones">
+                    <div class="juego-disco">
+                        <img src="im/music1.png" alt="">
+                        <h3>CHASE THIS LIGHT</h3>
+                        <h5>JIMMY EAT WORLD</h5>
+                        <div><svg width="414" height="18" viewBox="0 0 414 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.25" y="5.25" width="413.5" height="6.5" stroke="black" stroke-width="0.5"/><rect x="15.5" y="1.5" width="15" height="15" stroke="black" stroke-width="3"/></svg></div>
+                        <div><svg width="225" height="44" viewBox="0 0 225 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.4166 33L22.9166 22L39.4166 11V33ZM21.0833 33L4.58331 22L21.0833 11V33Z" fill="#1D1B20"/><path d="M78.6667 34.8333V9.16663L98.8334 22L78.6667 34.8333Z" fill="#1D1B20"/><path d="M147.333 34.8333V9.16663H154V34.8333H147.333ZM134 34.8333V9.16663H140.667V34.8333H134Z" fill="#1D1B20"/><path d="M185.583 11L202.083 22L185.583 33V11ZM203.917 11L220.417 22L203.917 33V11Z" fill="#1D1B20"/></svg></div>
+                    </div>
+                    <div class="juego-opcion">
+                        <button class="btn-ai" id="check-ia">ARTIFICIAL</button>
+                        <button class="btn-humano" id="check-humano">HUMANO</button>
+                    </div>
+                    <div class="racha">
+                        <h4>RACHA</h4>
+                        <hr>
+                        <h4>0/0</h4>
+                    </div>
+                </div>
                 <div id="questionresponse"></div>
                 <button id="nextquestion">SIGUIENTE</button>
                 <button id="reset" style="display: none;">REINICIAR</button>

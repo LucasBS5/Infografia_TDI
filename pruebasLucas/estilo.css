@@ -14,6 +14,7 @@ body{
     background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
     line-height: 1.6;
     overflow: scroll;
+    font-family: Tahoma, sans-serif;
 }
 
 /* ---------- ESTILOS DE LOS ICONOS DE PROGRAMAS ---------- */
@@ -43,14 +44,28 @@ body{
     margin-top: 1rem;
 }
 
+.icon-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-item p{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 /* ---------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
 
 .ventana{
     display: none;
     position: absolute;
     width: 80%;
-    background-color: silver;
-    border: 3px inset #222222;
+    background-color: #F1E4F6;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white #808080 #808080 white;
 }
 
 .ventana-body{
@@ -66,11 +81,12 @@ body{
     justify-content: space-between;
     padding: 0 0.3rem;
     background-color: #193887;
+    background: linear-gradient(to right, #224a7d 3%,#3068b0 27% ,#3e86e3 100%);
 }
 
 .titulo-barra h5{
-    font-family: Arial;
-    font-size: 1rem;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.2rem;
     font-weight: 200;
     color: #e9eae7;
 }
@@ -78,7 +94,11 @@ body{
 .controles-barra{
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 2px;
+}
+
+.controles-barra button{
+    box-shadow: 1px 1px 2px #00000094;
 }
 
 /* ---------- ESTILOS DE LA VENTANA DEL NAVEGADOR ---------- */
@@ -89,8 +109,8 @@ body{
 }
 
 .controles__item{
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
 }
 
 .buscador{
@@ -114,15 +134,15 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    font-weight: 900;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
     background-color: #808080;
     margin: 1rem;
 }
 
 .versus-container{
-    background-color: #A0E7E5;
+    background-color: #dadada;
     padding: 1rem;
 }
 
@@ -145,12 +165,12 @@ body{
 }
 
 .coldplay h3{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Jersey 15", sans-serif;
     font-size: 3rem;
 }
 
 .coldplay h5{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 1rem;
 }
 
@@ -162,19 +182,84 @@ body{
 }
 
 .velvet h3{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Jersey 15", sans-serif;
     font-size: 3rem;
 }
 
 .velvet h5{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma, sans-serif;
     font-size: 1rem;
 }
 
 /* ---------- ESTILOS DE LA VENTANA DEL JUEGO ---------- */
 
 .ventana[data-ventana="juego"] {
-    background: red;
+    width: 685px;
+    h2{
+    color: #000;
+    text-align: center;
+    font-family: "Jersey 10";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+h4{
+    color: #000;
+    text-align: center;
+    font-family: "Pixelify Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    }
+}
+
+.juego-opciones{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.juego-opcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.juego-disco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.juego-disco img{
+    width: 30%;
+}
+
+.juego-disco h3{
+    font-family: "Pixelify Sans";
+    font-size: 1.7rem;
+}
+
+.juego-disco h5{
+    font-family: "Pixelify Sans";
+    font-size: 1.3rem;
+}
+
+.btn-ai, .btn-humano{
+    font-family: "Pixelify Sans";
+    font-size: 24px;
+    width: 150px;
+    height: 60%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #D4A8E5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.36);
+    border: none;
+    cursor: pointer;
 }
 
 /* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
