@@ -78,4 +78,87 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     });
 });
+
+    // ---------- LÓGICA DE JUEGO ----------
+
+const box = document.getElementById('questionbox');
+const texto = document.getElementById('questiontext');
+const next = document.getElementById('nextquestion');
+const respuesta = document.getElementById('questionresponse');
+const reiniciar = document.getElementById('reset');
+
+var questions = [{
+    "question": "¿Esta canción fue hecha por una Inteligencia artificial?",
+    "response": "¡Correcto! Felicitaciones",
+    "answer": true
+},
+{
+    "question": "¿Esta canción fue hecha por una Inteligencia artificial?",
+    "response": "¡Incorrecto! Se trata de un humano.",
+    "answer": false
+}];
+
+var currentQuestionIndex = 0; 
+
+(function() {
+    fnReset();
+
+    document.getElementById('check-ia').addEventListener('click', function(event) {
+        fnCheck(false); 
+    });
+
+    document.getElementById('check-humano').addEventListener('click', function(event) {
+        fnCheck(true); 
+    });
+
+    document.getElementById('nextquestion').addEventListener('click', function(event) {
+        fnNext(); 
+    });
+
+    document.getElementById('reset').addEventListener('click', function(event) {
+        fnReset(); 
+    });
+})();
+
+function fnReset() {
+    document.getElementById('check-ia').style.display = "block";
+    document.getElementById('check-humano').style.display = "block";
+    box.style.display = "block"; 
+    next.style.display = "none";
+    reiniciar.style.display = "none";
+    currentQuestionIndex = 0;
+    texto.innerHTML = questions[currentQuestionIndex].question;
+}
+
+function fnNext() {
+    respuesta.style.display = "none";
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        texto.innerHTML = questions[currentQuestionIndex].question;
+        next.style.display = "none";
+    } else {
+        texto.innerHTML = "¡Juego terminado! Presiona reiniciar para volver a jugar.";
+        reiniciar.style.display = "block";
+        document.getElementById('check-ia').style.display = "none";
+        document.getElementById('check-humano').style.display = "none";
+        document.getElementById('nextquestion').style.display = "none";
+    }
+}
+
+function fnCheck(userAnswer) {
+    const isCorrect = userAnswer === questions[currentQuestionIndex].answer;
+    const responseText = questions[currentQuestionIndex].response;
+
+    respuesta.innerHTML = responseText;
+    respuesta.style.display = "block";
+    next.style.display = "block";
+
+    if (isCorrect) {
+        respuesta.classList.add('correct');
+        respuesta.classList.remove('incorrect');
+    } else {
+        respuesta.classList.add('incorrect');
+        respuesta.classList.remove('correct');
+    }
+}
 });
