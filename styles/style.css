@@ -1,0 +1,386 @@
+/*----------------ESTILOS DEL ESCRITORIO--------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px; 
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Oculta la barra de scroll */
+}
+
+body{
+    margin: 1vh 2vw;
+    background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
+    line-height: 1.6;
+    overflow: scroll;
+    font-family: Tahoma, sans-serif;
+}
+
+/* Estilos de la barra de tareas ---------- */
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #c0c0c0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px;
+    border-top: 2px solid #fff;
+    box-shadow: inset 0 1px #808080;
+}
+
+.taskbar-izq {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inicio {
+    background: linear-gradient(#fff, #c0c0c0);
+    border: 1px solid #808080;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+.taskbar-apps {
+    display: flex;
+    gap: 5px;
+}
+
+.taskbar-der {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Estilos de los iconos de programas ---------- */
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0 2rem;
+}
+
+.icons-left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.icons-right{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.icon__item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.icon-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-item p{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* ------------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
+
+.ventana{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 80%;
+    background-color: #F1E4F6;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white #808080 #808080 white;
+}
+
+.ventana-body{
+    padding: 1rem;
+}
+
+/*----Barra de navegación----*/
+.nav-barra{
+    position: sticky;
+    top: 0;
+    height: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+    align-items: center;
+    background: var(--barra-de-arriba, linear-gradient(90deg, #224A7D 2.88%, #3068B0 27.4%, #3E86E3 100%));
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.titulo-barra{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.icon-barra{
+    width: 30px;
+    height: 30px;
+    margin-right: 0.3rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.name-barra{
+    font-family: "Micro 5";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    h5{
+        margin: 0px;
+    }
+}
+
+.controles-barra{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    width: 64px;
+    height: 21px;
+}
+
+.control-item{
+    background: #FFF;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    
+}
+/* ---------- ESTILOS DE LA VENTANA DEL NAVEGADOR ---------- */
+
+.ventana[data-ventana="navegador"] {
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.controles__item{
+    width: 20px;
+    height: 20px;
+}
+
+.buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.buscador .url{
+    font-family: Times;
+    font-size: 1rem;
+    background-color: #e9eae7;
+    padding: 0.2rem;
+}
+
+.titulo-versus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #808080;
+    margin: 1rem;
+}
+
+.versus-container{
+    background-color: #dadada;
+    padding: 1rem;
+}
+
+.versus-container img{
+    width: 10rem;
+    margin: 1rem;
+}
+
+.texto-comparacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.coldplay{
+    display: flex;
+    flex-direction: row;
+    background-color: #808080;
+    margin: 1rem;
+}
+
+.coldplay h3{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 3rem;
+}
+
+.coldplay h5{
+    font-family: Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.velvet{
+    display: flex;
+    flex-direction: row;
+    background-color: #808080;
+    margin: 1rem;
+}
+
+.velvet h3{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 3rem;
+}
+
+.velvet h5{
+    font-family: Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL JUEGO ---------- */
+
+.ventana[data-ventana="juego"] {
+    width: 685px;
+    h2{
+    color: #000;
+    text-align: center;
+    font-family: "Jersey 10";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+h4{
+    color: #000;
+    text-align: center;
+    font-family: "Pixelify Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    }
+}
+
+.juego-opciones{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.juego-opcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.juego-disco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.juego-disco img{
+    width: 30%;
+}
+
+.juego-disco h3{
+    font-family: "Pixelify Sans";
+    font-size: 1.7rem;
+}
+
+.juego-disco h5{
+    font-family: "Pixelify Sans";
+    font-size: 1.3rem;
+}
+
+.btn-ai, .btn-humano{
+    font-family: "Pixelify Sans";
+    font-size: 24px;
+    width: 150px;
+    height: 60%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #D4A8E5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.36);
+    border: none;
+    cursor: pointer;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
+
+.ventana[data-ventana="calendar"] {
+    background: yellow;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL REPRODUCTOR ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

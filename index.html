@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- ESCRITORIO-------------------------------------------------- -->
+     <!---------- BARRA DE TAREAS ---------->
+
+    <div class="taskbar">
+        <div class="taskbar-izq">
+            <div class="inicio">Inicio</div>
+            <div class="taskbar-apps">
+                <span class="app-icon"></span>
+                <span class="app-icon"></span>
+            </div>
+        </div>
+        
+        <div class="taskbar-der">
+            <span class="clock">12:34 PM</span>
+        </div>
+    </div>
+    <!---------- ICONOS DE ESCRITORIO (APLICACIONES) ---------->
+
+    <div class="icons">
+        <div class="icons-left">
+            <div class="icon-item">
+                <img class="icon__item" src="icon/recycle_bin_full.ico" alt="">
+                <p>Papelera</p>
+            </div>
+                <div class="icon-item">
+                    <img class="icon__item aplicaciones" data-ventana="navegador" src="icon/chrome.ico" alt="">
+                    <p>Chrome</p>
+                </div>
+                <div class="icon-item">
+                    <img class="icon__item aplicaciones" data-ventana="juego" src="icon/minecraft.ico" alt="">
+                    <p>Juego</p>
+                </div>
+                <div class="icon-item">
+                    <img class="icon__item aplicaciones" data-ventana="calendar" src="icon/calendar.ico" alt="">
+                    <p>Calendario</p>
+                </div>
+                <div class="icon-item">
+                    <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                    <p>Instagram</p>
+                </div>
+                <div class="icon-item">
+                    <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                    <p>Suno Ai</p>
+                </div>
+                <div class="icon-item">
+                    <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                    <p>Udio Ai</p>
+                </div>
+        </div>
+        <div class="icons-right">
+            <div class="icon-item">
+                <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                <p>Bandlab</p>
+            </div>
+            <div class="icon-item">
+                <img class="icon__item aplicaciones" data-ventana="musica" src="icon/music.ico" alt="">
+                <p>Musica</p>
+            </div>
+        </div>
+    </div>
+
+
+<!--VENTANAS DE APLICACIONES----------------------------------------------------- -->
+
+    <!---------- APLICACIÓN DE NAVEGADOR (INTERNET EXPLORER) ---------->
+
+    <!---------- APLICACIÓN DE JUEGO ---------->
+
+
+    <!---------- APLICACIÓN CALENDARIO ---------->
+
+    <div class="ventana" data-ventana="calendar">
+        <div class="nav-barra">
+                <div class="titulo-barra">
+                    <div class="icon-barra">
+                    <img src="data/img/calendario.ico" alt="icon">
+                    </div>
+                    <div class="name-barra">
+                        <h5>Calendario</h5>
+                    </div>
+                </div>
+                <div class="controles-barra">
+                    <button class="control-item minimizar">—</button>
+                    <button class="control-item maximizar">☐</button>
+                    <button class="control-item close-btn">✕</button>
+                </div>
+        </div>
+        
+        <div class="ventana-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+        </div>
+    </div>
+
+    <!---------- APLICACIÓN MÚSICA ---------->
+
+
+   
+    <script src="scripts/script.js"></script>
+</body>
+</html>
