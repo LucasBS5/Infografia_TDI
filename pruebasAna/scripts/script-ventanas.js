@@ -1,18 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const ventanas = document.querySelectorAll('.ventana');
+    const ventanas = document.querySelectorAll(".ventana");
     const aplicacion = document.querySelectorAll('.icon-app');
 
     // ---------- ABRIR VENTANAS ----------
     // Al hacer clic en un icono de aplicación, se abre la ventana correspondiente
-    aplicacion.forEach(navegador => {
-    navegador.addEventListener('click', () => {
-        const target = navegador.dataset.ventana;
-        const ventana = document.querySelector(`.ventana[data-ventana="${target}"]`);
-        ventana.style.display = 'contents';
-        console.log(ventana);
-    });
-});
+//     aplicacion.forEach(navegador => {
+//     navegador.addEventListener('click', () => {
+//         const target = navegador.dataset.ventana;
+//         const ventana = document.querySelector(`.ventana[data-ventana="${target}"]`);
+//         if(ventana){
+//         ventana.style.display = 'contents';
+//         console.log(ventana);
+//             }
+//     });
+// });
 
 // Funcionalidades de las ventanas al interactuar con la barra de navegación
     ventanas.forEach(ventana => {
@@ -22,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------- CERRAR VENTANA ----------
 
     closeBtn.addEventListener('click', () => {
-        ventana.style.display = 'none';
+        ventana.style.visibility = 'hidden';
+        ventana.style.opacity = '0';
     });
 
     // ---------- ARRASTRAR VENTANA ----------
