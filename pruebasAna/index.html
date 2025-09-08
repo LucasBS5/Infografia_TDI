@@ -2,22 +2,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-calendario.css">
-    <title>Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Escritorio Ana</title>
 </head>
 <body>
-    <div class="ventana" data-ventana="calendario" id="calendar">
-    <div class="barra-nav"></div>
-    <div class="contenido-calendario" id="contenido-calendario">
-        <div class="control-año" data-control="izquierda"></div>
-        <div class="control-año" data-control="derecha"></div>
-        <div class="año"></div>
-        <div class="dato">
+
+    <!---------- ICONOS DE ESCRITORIO (APLICACIONES) ---------->
+<div class="iconos-escritorio">
+
+    <div class="icon-app" data-icono-nombre="calendario">
+        <img src="img/icon/calendario.ico" alt="icono calendario">
+        <p>Calendario</p>
+    </div>
+
+    <div class="icon-app" data-icono-nombre="juego">
+        <img src="img/icon/juego.ico" alt="icono juego">
+        <p>Juego</p>
+    </div>
+
+    <div class="icon-app" data-icono-nombre="music">
+        <img src="img/icon/music.ico" alt="icono musica">
+        <p>Musica</p>
+    </div>
+
+    <div class="icon-app" data-icono-nombre="folder">
+        <img src="img/icon/folder.ico" alt="icono carpeta">
+        <p>Carpeta</p>
+    </div>
+
+</div>
+
+    <!-- ---------- VENTANAS DE APLICACIONES ABIERTAS -------------- -->
+
+        <!-- ------ CALENDARIO-------- -->
+   <div class="ventana" data-ventana="calendario">
+
+        <div class="nav-barra"></div>
+
+        <div class="ventana-body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
         </div>
+
     </div>
-    
+
+        <!-- ------ JUEGO-------- -->
+    <div class="ventana" data-ventana="juego">
+        
+        <div class="nav-barra"></div>
+
+        <div class="ventana-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+        </div>
+
     </div>
-    <script src="script-calendario.js"></script>
+
+
+    <script src="scripts/script-barra-nav.js"></script>
+    <script src="scripts/script-ventanas.js"></script>
+
 </body>
 </html>

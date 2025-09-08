@@ -13,7 +13,7 @@ body{
     margin: 1vh 2vw;
     background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
     line-height: 1.6;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* ---------- ESTILOS DE LOS ICONOS DE PROGRAMAS ---------- */
@@ -184,10 +184,6 @@ body{
 }
 
 /* ---------- ESTILOS DE LA VENTANA DEL REPRODUCTOR ---------- */
-
-.ventana[data-ventana="musica"]{
-    
-}
 
 
 
