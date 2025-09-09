@@ -29,7 +29,6 @@ body{
 .icons-left{
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .icons-right{
@@ -64,7 +63,6 @@ body{
     position: absolute;
     top: 0px;
     left: 0px;
-    bottom: 0px;
     right: 0px;
     width: 80%;
     background-color: #F1E4F6;
@@ -113,12 +111,12 @@ body{
     overflow-y: scroll;
 }
 
-.controles__item{
+.ventana[data-ventana="navegador"] .controles__item{
     width: 20px;
     height: 20px;
 }
 
-.buscador{
+.ventana[data-ventana="navegador"] .buscador{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -128,14 +126,28 @@ body{
     padding: 0.5rem 1rem;
 }
 
-.buscador .url{
+.ventana[data-ventana="navegador"] .buscador .url{
     font-family: Times;
     font-size: 1rem;
     background-color: #e9eae7;
     padding: 0.2rem;
 }
 
-.titulo-versus{
+.ventana[data-ventana="navegador"] .url-arrows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ventana[data-ventana="navegador"] .url-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ventana[data-ventana="navegador"] .titulo-versus{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -146,52 +158,52 @@ body{
     margin: 1rem;
 }
 
-.versus-container{
+.ventana[data-ventana="navegador"] .versus-container{
     background-color: #dadada;
     padding: 1rem;
 }
 
-.versus-container img{
+.ventana[data-ventana="navegador"] .versus-container img{
     width: 10rem;
     margin: 1rem;
 }
 
-.texto-comparacion{
+.ventana[data-ventana="navegador"] .texto-comparacion{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.coldplay{
+.ventana[data-ventana="navegador"] .coldplay{
     display: flex;
     flex-direction: row;
     background-color: #808080;
     margin: 1rem;
 }
 
-.coldplay h3{
+.ventana[data-ventana="navegador"] .coldplay h3{
     font-family: "Jersey 15", sans-serif;
     font-size: 3rem;
 }
 
-.coldplay h5{
+.ventana[data-ventana="navegador"] .coldplay h5{
     font-family: Tahoma, sans-serif;
     font-size: 1rem;
 }
 
-.velvet{
+.ventana[data-ventana="navegador"] .velvet{
     display: flex;
     flex-direction: row;
     background-color: #808080;
     margin: 1rem;
 }
 
-.velvet h3{
+.ventana[data-ventana="navegador"] .velvet h3{
     font-family: "Jersey 15", sans-serif;
     font-size: 3rem;
 }
 
-.velvet h5{
+.ventana[data-ventana="navegador"] .velvet h5{
     font-family: Tahoma, sans-serif;
     font-size: 1rem;
 }
@@ -200,17 +212,10 @@ body{
 
 .ventana[data-ventana="juego"] {
     width: 685px;
-    h2{
-    color: #000;
-    text-align: center;
-    font-family: "Jersey 10";
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    }
+    height: auto;
+}
 
-h4{
+.ventana[data-ventana="juego"] h4{
     color: #000;
     text-align: center;
     font-family: "Pixelify Sans";
@@ -219,8 +224,16 @@ h4{
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 1rem;
-    }
+}
+
+.ventana[data-ventana="juego"] h2{
+    color: #000;
+    text-align: center;
+    font-family: "Jersey 10";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .juego-opciones{
