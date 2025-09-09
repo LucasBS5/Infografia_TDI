@@ -79,81 +79,111 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-    // ---------- LÓGICA DE JUEGO ----------
+// ---------- CAMBIO DE PORTADA Y NOMBRE DE DISCOS AL PASAR LA PREGUNTA ----------
+
+const datos = [
+  { img: "im/music1.png", titulo: "CHASE THIS LIGHT", banda: "Jimmy EAT WORLD" },
+  { img: "im/music2.png", titulo: "(WHAT'S THE STORY) MORNING GLORY?", banda: "OASIS" },
+  { img: "im/music3.png", titulo: "DUST ON THE WIND", banda: "THE VELVET SUNDOWN" }
+];
+
+let indice = 0; // para los discos
+let racha = 0;
+
+// ---------- LÓGICA DE JUEGO ----------
 
 const box = document.getElementById('questionbox');
 const next = document.getElementById('nextquestion');
 const respuesta = document.getElementById('questionresponse');
 const reiniciar = document.getElementById('reset');
 
-var questions = [{
-    "response": "¡Correcto! Felicitaciones",
-    "answer": true
-},
-{
-    "response": "¡Incorrecto! Se trata de un humano.",
-    "answer": false
-}
+var questions = [
+  { "response": "¡Correcto! Felicitaciones", "answer": true },
+  { "response": "¡Correcto! Felicitaciones", "answer": true },
+  { "response": "¡Incorrecto! Se trata de una IA.", "answer": false }
 ];
 
 var currentQuestionIndex = 0; 
 
-(function() {
+(function () {
+  fnReset();
+
+  document.getElementById('check-ia').addEventListener('click', function () {
+    fnCheck(false);
+  });
+
+  document.getElementById('check-humano').addEventListener('click', function () {
+    fnCheck(true);
+  });
+
+  document.getElementById('nextquestion').addEventListener('click', function () {
+    fnNext();
+  });
+
+  document.getElementById('reset').addEventListener('click', function () {
     fnReset();
-
-    document.getElementById('check-ia').addEventListener('click', function(event) {
-        fnCheck(false); 
-    });
-
-    document.getElementById('check-humano').addEventListener('click', function(event) {
-        fnCheck(true); 
-    });
-
-    document.getElementById('nextquestion').addEventListener('click', function(event) {
-        fnNext(); 
-    });
-
-    document.getElementById('reset').addEventListener('click', function(event) {
-        fnReset(); 
-    });
+  });
 })();
 
 function fnReset() {
-    document.getElementById('check-ia').style.display = "block";
-    document.getElementById('check-humano').style.display = "block";
-    box.style.display = "block"; 
-    next.style.display = "none";
-    reiniciar.style.display = "none";
-    currentQuestionIndex = 0;
+  document.getElementById('check-ia').style.display = "block";
+  document.getElementById('check-humano').style.display = "block";
+  box.style.display = "block";
+  next.style.display = "none";
+  reiniciar.style.display = "none";
+  currentQuestionIndex = 0;
+  indice = 0;
+
+  // PARA MOSTRAR EL PRIMER DISCO
+  document.getElementById("imagendisco").src = datos[indice].img;
+  document.getElementById("titulodisco").textContent = datos[indice].titulo;
+  document.getElementById("nombrebanda").textContent = datos[indice].banda;
+
+  // LIMPIAR RESPUESTA   
+  respuesta.textContent = "";
+  respuesta.style.display = "none";
+
+  racha = 0;
+  document.getElementById("racha").textContent = racha;
 }
 
 function fnNext() {
-    respuesta.style.display = "none";
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        next.style.display = "none";
-    } else {
-        reiniciar.style.display = "block";
-        document.getElementById('check-ia').style.display = "none";
-        document.getElementById('check-humano').style.display = "none";
-        document.getElementById('nextquestion').style.display = "none";
-    }
+  respuesta.style.display = "none";
+  currentQuestionIndex++;
+
+  // MUESTRA LOS SIGUIENTES DISCOS  
+  indice = (indice + 1) % datos.length;
+  document.getElementById("imagendisco").src = datos[indice].img;
+  document.getElementById("titulodisco").textContent = datos[indice].titulo;
+  document.getElementById("nombrebanda").textContent = datos[indice].banda;
+
+  if (currentQuestionIndex < questions.length) {
+    next.style.display = "none";
+  } else {
+    reiniciar.style.display = "block";
+    document.getElementById('check-ia').style.display = "none";
+    document.getElementById('check-humano').style.display = "none";
+    document.getElementById('nextquestion').style.display = "none";
+  }
 }
 
 function fnCheck(userAnswer) {
-    const isCorrect = userAnswer === questions[currentQuestionIndex].answer;
-    const responseText = questions[currentQuestionIndex].response;
+  const isCorrect = userAnswer === questions[currentQuestionIndex].answer;
+  const responseText = questions[currentQuestionIndex].response;
 
-    respuesta.innerHTML = responseText;
-    respuesta.style.display = "block";
-    next.style.display = "block";
+  respuesta.innerHTML = responseText;
+  respuesta.style.display = "block";
+  next.style.display = "block";
 
-    if (isCorrect) {
-        respuesta.classList.add('correct');
-        respuesta.classList.remove('incorrect');
-    } else {
-        respuesta.classList.add('incorrect');
-        respuesta.classList.remove('correct');
-    }
+  if (isCorrect) {
+    respuesta.classList.add('correct');
+    respuesta.classList.remove('incorrect');
+    racha++;
+    document.getElementById("racha").textContent = racha;
+  } else {
+    respuesta.classList.add('incorrect');
+    respuesta.classList.remove('correct');
+  }
 }
+
 });
