@@ -38,8 +38,8 @@ body{
 }
 
 .icon__item {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     margin-top: 1rem;
 }
@@ -101,6 +101,8 @@ body{
 }
 
 .controles-barra button{
+    width: 1.2rem;
+    height: 1.2rem;
     box-shadow: 1px 1px 2px #00000094;
 }
 
@@ -111,43 +113,45 @@ body{
     overflow-y: scroll;
 }
 
-.ventana[data-ventana="navegador"] .controles__item{
+.controles__item{
     width: 20px;
     height: 20px;
 }
 
-.ventana[data-ventana="navegador"] .buscador{
+.buscador{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: #B0B0B0;   
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
 }
 
-.ventana[data-ventana="navegador"] .buscador .url{
+.buscador .url{
     font-family: Times;
     font-size: 1rem;
     background-color: #e9eae7;
+    width: 100%;
     padding: 0.2rem;
+    margin: 0 1rem;
 }
 
-.ventana[data-ventana="navegador"] .url-arrows{
+.url-arrows{
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
 }
 
-.ventana[data-ventana="navegador"] .url-options{
+.url-options{
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
 }
 
-.ventana[data-ventana="navegador"] .titulo-versus{
+.titulo-versus{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -158,52 +162,52 @@ body{
     margin: 1rem;
 }
 
-.ventana[data-ventana="navegador"] .versus-container{
+.versus-container{
     background-color: #dadada;
     padding: 1rem;
 }
 
-.ventana[data-ventana="navegador"] .versus-container img{
+.versus-container img{
     width: 10rem;
     margin: 1rem;
 }
 
-.ventana[data-ventana="navegador"] .texto-comparacion{
+.texto-comparacion{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.ventana[data-ventana="navegador"] .coldplay{
+.coldplay{
     display: flex;
     flex-direction: row;
     background-color: #808080;
     margin: 1rem;
 }
 
-.ventana[data-ventana="navegador"] .coldplay h3{
+.coldplay h3{
     font-family: "Jersey 15", sans-serif;
     font-size: 3rem;
 }
 
-.ventana[data-ventana="navegador"] .coldplay h5{
+.coldplay h5{
     font-family: Tahoma, sans-serif;
     font-size: 1rem;
 }
 
-.ventana[data-ventana="navegador"] .velvet{
+.velvet{
     display: flex;
     flex-direction: row;
     background-color: #808080;
     margin: 1rem;
 }
 
-.ventana[data-ventana="navegador"] .velvet h3{
+.velvet h3{
     font-family: "Jersey 15", sans-serif;
     font-size: 3rem;
 }
 
-.ventana[data-ventana="navegador"] .velvet h5{
+.velvet h5{
     font-family: Tahoma, sans-serif;
     font-size: 1rem;
 }
@@ -288,7 +292,67 @@ body{
 
 /* ---------- ESTILOS DE LA VENTANA DEL REPRODUCTOR ---------- */
 
+.ventana[data-ventana="musica"] {
+    font-family: "Pixelify Sans";
+    background-color: #91b4c8;
+    width: 500px;
+    height: 320px;
+    overflow: scroll;
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none;
+}
 
+.ventana[data-ventana="musica"] .ventana-body {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.separador__reproductor{
+    border: none;
+    border-left: 1px solid #535353;
+}
+
+.reproductor__portada{
+    width: 60px;
+    height: 60px;
+}
+
+.columna__canciones li{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #0000003a;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.columna__cancion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columna__cancion h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.columna__cancion h6{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #747474;
+}
+
+.columna__cancion img{
+    width: 150px;
+    height: 150px;
+}
 
 
 
