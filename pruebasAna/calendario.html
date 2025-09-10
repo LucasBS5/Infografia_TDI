@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles/calendario.css">
 </head>
 <body>
-     <!---------- APLICACIÓN CALENDARIO ---------->
+     <!----------------  APLICACIÓN CALENDARIO ------------------->
+     <!--------Línea del tiempo--------->
     <div class="ventana" data-ventana="calendar">
         <div class="nav-barra">
                 <div class="titulo-barra">
@@ -68,6 +69,43 @@
                     <img src="https://placehold.co/400x420" alt="">
                     <div class="mensaje-oculto"><h2>2020</h2></div>
                 </div>
+            </div>
+        </div>
+    </div>
+     <!--------Eventos de la línea del tiempo--------->
+    <div class="ventana" data-ventana="calendar-eventos">
+        <div class="nav-barra">
+                <div class="titulo-barra">
+                    <div class="icon-barra">
+                    <img src="data/inicio/calendario.png" alt="icon">
+                    </div>
+                    <div class="name-barra">
+                        <h5>Calendario</h5>
+                    </div>
+                </div>
+                <div class="controles-barra">
+                    <button class="control-item minimizar">—</button>
+                    <button class="control-item maximizar">☐</button>
+                    <button class="control-item close-btn">✕</button>
+                </div>
+        </div>
+        <div class="ventana-body">
+            <button class="volver-atras">VOLVER ATRÁS</button>
+            <div class="nav-evento">
+                <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M17.5 22.5L10 15L17.5 7.5L19.25 9.25L13.5 15L19.25 20.75L17.5 22.5Z" fill="#1D1B20"/></svg>
+            </button>  
+            <h1>1930/40</h1>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M15.75 15L10 9.25L11.75 7.5L19.25 15L11.75 22.5L10 20.75L15.75 15Z" fill="#1D1B20"/></svg>
+            </button>
+            </div>
+            <hr>
+            <div class="dato-evento">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium necessitatibus enim debitis quae ducimus alias sapiente ullam corrupti facilis, voluptates accusantium mollitia provident maiores deleniti nisi obcaecati non porro dolore.</li>
+                </ul>
+                <img src="https://placehold.co/246x282" alt="">
             </div>
         </div>
     </div>
