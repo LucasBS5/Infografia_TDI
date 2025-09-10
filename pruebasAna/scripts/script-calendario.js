@@ -18,4 +18,7 @@ document.addEventListener ('DOMContentLoaded', () => {
             });
         });
 
+const datos = document.querySelectorAll('.dato-evento');
+const fechas = document.querySelectorAll('.fecha-evento');
+
 });
