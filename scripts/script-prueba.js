@@ -82,9 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // ---------- CAMBIO DE PORTADA Y NOMBRE DE DISCOS AL PASAR LA PREGUNTA ----------
 
 const datos = [
-  { img: "im/music1.png", titulo: "CHASE THIS LIGHT", banda: "Jimmy EAT WORLD" },
-  { img: "im/music2.png", titulo: "(WHAT'S THE STORY) MORNING GLORY?", banda: "OASIS" },
-  { img: "im/music3.png", titulo: "DUST ON THE WIND", banda: "THE VELVET SUNDOWN" }
+  { img: "imagenes/music1.png", titulo: "CHASE THIS LIGHT", banda: "Jimmy EAT WORLD" },
+  { img: "imagenes/music2.png", titulo: "(WHAT'S THE STORY) MORNING GLORY?", banda: "OASIS" },
+  { img: "imagenes/music3.png", titulo: "DUST ON THE WIND", banda: "THE VELVET SUNDOWN" }
 ];
 
 let indice = 0; // para los discos
@@ -98,9 +98,9 @@ const respuesta = document.getElementById('questionresponse');
 const reiniciar = document.getElementById('reset');
 
 var questions = [
-  { "response": "¡Correcto! Felicitaciones", "answer": true },
-  { "response": "¡Correcto! Felicitaciones", "answer": true },
-  { "response": "¡Incorrecto! Se trata de una IA.", "answer": false }
+  { "response": "", "answer": true },
+  { "response": "", "answer": true },
+  { "response": "", "answer": false }
 ];
 
 var currentQuestionIndex = 0; 
