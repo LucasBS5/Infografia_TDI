@@ -99,6 +99,8 @@ html{
     h1{
         margin: 0px;
     }
+    width: auto;
+    height: auto;
 
 }
 
@@ -107,7 +109,8 @@ html{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 25px;
+    column-gap: 15.55%;
+    row-gap: 0px;
     margin-top: 1rem;
     width: auto;
 }
@@ -115,6 +118,9 @@ html{
     width: auto;
     height: auto;
     align-self: start;
+    position: relative;
+    display: inline-block;
+    align-items: center;
 }
 .evento h3{
     margin: 0px;
@@ -122,7 +128,35 @@ html{
 
 .evento img{
     margin: 0px;
-    max-width: 90%;
-    height: 179px;
+    max-width: 95%;
+    height: 165px;
     object-fit: contain;
+}
+
+.mensaje-oculto{
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 21.600px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    height: 165px;
+    width:149.275px;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.673);
+}
+
+.mensaje-oculto h2{
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+}
+
+/*clase que agrega js para mostrar el mensaje*/
+.mensaje-oculto.visible{
+    visibility: visible;
+    opacity: 1;
 }
