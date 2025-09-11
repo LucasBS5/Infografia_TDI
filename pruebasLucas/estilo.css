@@ -398,9 +398,9 @@ body{
     height: 60px;
 }
 
-.columna__canciones li{
+.columna__canciones{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
@@ -431,6 +431,16 @@ body{
 .columna__cancion img{
     width: 150px;
     height: 150px;
+}
+
+.cancion-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.cancion-left h4, h6{
+    margin: 0 1rem;
+    line-height: 1;
 }
 
 .reproductor-opciones{
