@@ -380,9 +380,9 @@ body{
     font-family: "Pixelify Sans";
     background-color: #91b4c8;
     width: 600px;
-    height: 310px;
-    overflow: scroll;
-    scrollbar-width: none; /* Para otros navegadores que da error */
+    height: 320px;
+    overflow: scroll; /*Esconde la barra de scroll*/
+    scrollbar-width: none; /* Esconde la barra de scroll para otros navegadores que da error */
     -ms-overflow-style: none;
 }
 
@@ -405,8 +405,6 @@ body{
     font-weight: 500;
     text-decoration: none;
     list-style-type: none;
-    background-color: #0000003a;
-    padding: 0.6rem;
     margin-bottom: 0.5rem;
     gap: 1rem;
 }
@@ -417,15 +415,18 @@ body{
     align-items: center;
 }
 
-.columna__cancion h4{
+.columna__cancion .tituloDer{
     font-size: 1.5rem;
     font-weight: 600;
+    margin: 0.6rem 0 0.4rem 0;
+    margin-bottom: 0.4rem;
 }
 
-.columna__cancion h6{
+.columna__cancion .artistaDer{
     font-size: 1rem;
     font-weight: 500;
     color: #747474;
+    margin-bottom: 0.7rem;
 }
 
 .columna__cancion img{
@@ -433,14 +434,26 @@ body{
     height: 150px;
 }
 
+.cancionElegidaText{
+    line-height: 1;
+}
+
 .cancion-left{
     display: flex;
     flex-direction: row;
+    padding: 0.6rem;
+    background-color: #0000003a;
+    cursor: pointer;
 }
 
-.cancion-left h4, h6{
+.cancion-left .titulo-left, .artista-left{
     margin: 0 1rem;
     line-height: 1;
+}
+
+.cancion-left h6{
+    font-weight: 300;
+    margin-top: 0.2rem;
 }
 
 .reproductor-opciones{
@@ -449,17 +462,51 @@ body{
     align-items: center;
 }
 
-.controles-reproductor{
+.controles{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    position: absolute;
+    bottom: 0.3rem;
 }
 
-.controles-reproductor svg{
+.controles button{
+    border: none;
+    background: none;
+}
+
+.controles svg{
     cursor: pointer;
 }
 
+.copyright-pop{
+    font-family: "Pixelify Sans";
+    background-color: #F6F2E4;
+    padding: 2rem;
+}
+
+.warning-img{
+    width: 10%;
+    margin-right: 1rem;
+}
+
+.copy-img{
+    width: 60px;
+    margin: 1rem 0;
+}
+
+.advertencia{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
