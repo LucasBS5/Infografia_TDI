@@ -5,7 +5,7 @@ document.addEventListener ('DOMContentLoaded', () => {
 
      // 1. Obtener los elementos del HTML
         const mensajes = document.querySelectorAll('.mensaje-oculto');
-        const imgEvento = document.querySelectorAll('.evento img');
+        const imgEvento = document.querySelectorAll('.img-overlay');
 
         // 2. Escuchar cuando el ratón entra (mouseover)
         //se hace un forEach para recorrer cada imagen y comparar si su index (recordar que el querySelectorAll devuelve un NodeList, que es un tipo de array) es el que coincide con el mensaje que debe visualizarse
@@ -90,8 +90,26 @@ renderEvento();
 
 
 //ABRIR VENTANA DEL EVENTO AL HACER CLICK EN LA IMAGEN
+const ventanaEvento = document.querySelector('.ventana[data-ventana="calendar-eventos"]');
+
  imgEvento.forEach((img, i) => {
-    console.log(img);
+    img.addEventListener('click', () =>{
+        console.log('click en imagen');
+        index = i; //para que al abrir la ventana el evento que se muestre sea el correspondiente a la imagen clicada
+        renderEvento();
+        ventanaEvento.classList.add('visible');
+
+    })
+ });
+
+  mensajes.forEach((img, i) => {
+    img.addEventListener('click', () =>{
+        console.log('click en imagen');
+        index = i; //para que al abrir la ventana el evento que se muestre sea el correspondiente a la imagen clicada
+        renderEvento();
+        ventanaEvento.classList.add('visible');
+
+    })
  });
 
 });

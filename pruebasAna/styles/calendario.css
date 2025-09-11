@@ -161,6 +161,8 @@ html{
 
 /* ------Estilos para la ventana de eventos---------- */
 .ventana[data-ventana="calendar-eventos"] {
+    visibility: hidden;
+    opacity: 0;
     position: relative;
     left: calc(100% - 440px);
     background: #F6F2E4;
@@ -215,4 +217,9 @@ html{
     flex-direction: column;
     width: auto;
     height: auto;
+}
+/*Clase agregada desde js para mostrar la ventana*/
+.ventana[data-ventana="calendar-eventos"].visible{
+    visibility: visible;
+    opacity: 1;
 }
