@@ -103,7 +103,7 @@ body{
 /* ------------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
 
 .ventana{
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -185,13 +185,6 @@ body{
 
 /* ---------- ESTILOS DE LA VENTANA DEL JUEGO ---------- */
 
-
-/* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
-.ventana[data-ventana="calendar"] {
-    background: #F6F2E4;
-    width: 414px;
-    height: 609px;
-}
 
 /* ---------- ESTILOS DE LA VENTANA DEL REPRODUCTOR ---------- */
 

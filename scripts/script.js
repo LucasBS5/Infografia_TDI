@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navegador.addEventListener('click', () => {
         const target = navegador.dataset.ventana;
         const ventana = document.querySelector(`.ventana[data-ventana="${target}"]`);
-        ventana.style.display = 'block';
+        ventana.style.visibility = 'visible';
     });
 });
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------- CERRAR VENTANA ----------
 
     closeBtn.addEventListener('click', () => {
-        ventana.style.display = 'none';
+        ventana.style.visibility = 'hidden';
     });
 
     // ---------- ARRASTRAR VENTANA ----------

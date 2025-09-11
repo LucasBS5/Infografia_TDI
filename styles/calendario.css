@@ -1,106 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    font-size: 16px; 
-    scroll-behavior: smooth;
-    scrollbar-width: none; /* Oculta la barra de scroll */
-}
-
-body{
-    margin: 1vh 2vw;
-    background:#224A7D;
-    line-height: 1.6;
-    overflow: scroll;
-    font-family: Tahoma, sans-serif;
-}
-
-/* ------------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
-
-.ventana{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 0px;
-    right: 0px;
-    width: auto;
-    height: auto;
-    border: 7px solid #fcfcfc;
-    background-color: #F6F2E4;
-    align-items: center;
-}
-
-.ventana-body{
-    padding: 1rem;
-}
-
-/*----Barra de navegación----*/
-.nav-barra{
-    position: sticky;
-    top: 0;
-    height: 30px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 0.3rem;
-    align-items: center;
-    background: var(--barra-de-arriba, linear-gradient(90deg, #224A7D 2.88%, #3068B0 27.4%, #3E86E3 100%));
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
-}
-
-.titulo-barra{
-    display: flex;
-    align-items: center;
-    margin: 0px;
-}
-
-.icon-barra{
-    width: 30px;
-    height: 30px;
-    margin-right: 0.3rem;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-.name-barra{
-    font-family: "Micro 5";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    h5{
-        margin: 0px;
-    }
-}
-
-.controles-barra{
-    display: flex;
-    align-items: center;
-    gap: 0.1rem;
-    width: 64px;
-    height: 21px;
-}
-
-.control-item{
-    background: #FFF;
-    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25);
-    border: none;
-    color: black;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    padding: 0px;
-    
-}
-
-
 /* --------------- ESTILOS DE LA VENTANA DEL CALENDARIO --------------- */
 /* ------Estilos para la ventana de la línea del tiempo---------- */
 .ventana[data-ventana="calendar"] {
@@ -177,11 +74,10 @@ body{
 .ventana[data-ventana="calendar-eventos"] {
     visibility: hidden;
     opacity: 0;
-    position: relative;
-    left: calc(100% - 440px);
     background: #F6F2E4;
     width: 414px;
     height: 609px;
+    z-index: 1000;
 }
 .ventana[data-ventana="calendar-eventos"] .ventana-body{
     width: auto;

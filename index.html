@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/calendario.css">
 </head>
 <body>
     <!-- ESCRITORIO-------------------------------------------------- -->
@@ -90,7 +91,7 @@
 
 
     <!---------- APLICACIÓN CALENDARIO ---------->
-
+     <!--------Línea del tiempo--------->
     <div class="ventana" data-ventana="calendar">
         <div class="nav-barra">
                 <div class="titulo-barra">
@@ -109,14 +110,75 @@
         </div>
         
         <div class="ventana-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
+            <h1>Línea del tiempo</h1>
+            <div class="contenedor-eventos">
+                <div class="evento">
+                    <h3>1930/40</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>1930/40</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>1950</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>1950</h2></div>
+                </div>
+                 <div class="evento">
+                    <h3>1960/70</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>1960/70</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>1980</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>1980</h2></div>
+                </div>
+                 <div class="evento">
+                    <h3>1990</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>1990</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>2000</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>2000</h2></div>
+                </div>
+                 <div class="evento">
+                    <h3>2010</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>2010</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>2020</h3>
+                    <img class="img-overlay" src="https://placehold.co/400x420" alt="">
+                    <div class="mensaje-oculto"><h2>2020</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--------Eventos de la línea del tiempo--------->
+    <div class="ventana" data-ventana="calendar-eventos">
+        <div class="nav-barra">
+                <div class="titulo-barra">
+                    <div class="icon-barra">
+                    <img src="data/inicio/calendario.png" alt="icon">
+                    </div>
+                    <div class="name-barra">
+                        <h5>Calendario</h5>
+                    </div>
+                </div>
+                <div class="controles-barra">
+                    <button class="control-item minimizar">—</button>
+                    <button class="control-item maximizar">☐</button>
+                    <button class="control-item close-btn">✕</button>
+                </div>
+        </div>
+        <div class="ventana-body" id="cuerpo-eventos">
         </div>
     </div>
 
     <!---------- APLICACIÓN MÚSICA ---------->
 
-
-   
+    <script src="scripts/script-calendario.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
