@@ -111,6 +111,7 @@ body{
 .ventana[data-ventana="navegador"] {
     max-height: 600px;
     overflow-y: scroll;
+    background-color: #F6F2E4;
 }
 
 .controles__item{
@@ -131,7 +132,7 @@ body{
 .buscador .url{
     font-family: Times;
     font-size: 1rem;
-    background-color: #e9eae7;
+    background-color: #e9eae7; 
     width: 100%;
     padding: 0.2rem;
     margin: 0 1rem;
@@ -212,6 +213,37 @@ body{
     font-size: 1rem;
 }
 
+.versus-pagina{
+    background-color: #F6F2E4;
+}
+
+.versus-pagina h2{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.versus-subtitulo{
+    font-family: "Pixelify Sans";
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.banda-titulo{
+    font-family: "Pixelify Sans";
+    font-size: 2.2rem;
+}
+
+.comparacion{
+    font-family: "Pixelify Sans";
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 1.5rem 3rem;
+}
+
 /* ---------- ESTILOS DE LA VENTANA DEL JUEGO ---------- */
 
 .ventana[data-ventana="juego"] {
@@ -284,6 +316,16 @@ body{
     cursor: pointer;
 }
 
+.botones-juego{
+    font-family: "Pixelify Sans";
+    font-size: 1.5rem;
+    padding: 0.5rem 1.3rem;
+    background-color: #F6F2E4;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.36);
+    cursor: pointer;
+}
+
 /* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
 
 .ventana[data-ventana="calendar"] {
@@ -295,23 +337,18 @@ body{
 .ventana[data-ventana="musica"] {
     font-family: "Pixelify Sans";
     background-color: #91b4c8;
-    width: 500px;
-    height: 320px;
+    width: 600px;
+    height: 310px;
     overflow: scroll;
     scrollbar-width: none; /* Para Firefox */
     -ms-overflow-style: none;
 }
 
 .ventana[data-ventana="musica"] .ventana-body {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: center;
-}
-
-.separador__reproductor{
-    border: none;
-    border-left: 1px solid #535353;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .reproductor__portada{
@@ -352,6 +389,23 @@ body{
 .columna__cancion img{
     width: 150px;
     height: 150px;
+}
+
+.reproductor-opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controles-reproductor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.controles-reproductor svg{
+    cursor: pointer;
 }
 
 

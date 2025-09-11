@@ -180,10 +180,9 @@ function fnCheck(userAnswer) {
     respuesta.classList.remove('incorrect');
     racha++;
     document.getElementById("racha").textContent = racha;
-  } else {
+    } else {
     respuesta.classList.add('incorrect');
     respuesta.classList.remove('correct');
+    }
   }
-}
-
 });
