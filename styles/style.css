@@ -1,5 +1,9 @@
 /*----------------ESTILOS DEL ESCRITORIO--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 *{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,7 +20,6 @@ body{
     background: linear-gradient(135deg, #D0BFFF, #A0E7E5, #FFB3DE);
     line-height: 1.6;
     overflow: scroll;
-    font-family: Tahoma, sans-serif;
 }
 
 /* Estilos de la barra de tareas ---------- */
@@ -94,11 +97,7 @@ body{
     align-items: center;
 }
 
-.icon-item p{
-    font-family: "Jersey 15", sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-}
+
 
 /* ------------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
 
@@ -145,20 +144,19 @@ body{
     height: 30px;
     margin-right: 0.3rem;
     img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        width: 33px;
+        height: 30px;
+        flex-shrink: 0;
+        aspect-ratio: 11/10;
     }
 }
 
 .name-barra{
-    font-family: "Micro 5";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
     h5{
-        margin: 0px;
+        color: #FFF;
+        font-size: 24px;
     }
 }
 

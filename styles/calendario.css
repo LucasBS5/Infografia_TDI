@@ -8,6 +8,7 @@
 .ventana[data-ventana="calendar"] .ventana-body{
     h1{
         margin: 0px;
+        font-size: 32px;
     }
     width: auto;
     height: auto;
@@ -21,12 +22,12 @@
     justify-content: flex-start;
     column-gap: 15.55%;
     row-gap: 0px;
-    margin-top: 1rem;
+    margin-top: 0px;
     width: auto;
 }
 .evento{
-    width: auto;
-    height: auto;
+    width: 139px;
+    height: 182px;
     align-self: start;
     position: relative;
     display: inline-block;
@@ -39,8 +40,9 @@
 .evento img{
     margin: 0px;
     max-width: 95%;
+    min-width: 132px;
     height: 145px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .mensaje-oculto{
@@ -93,9 +95,9 @@
     padding: 0px;
     display: flex;
     align-items: center;
-
+    justify-content: center;
     color: #000;
-    font-size: 10px;
+    font-size: 24px;
 }
 
 .nav-evento{
@@ -103,10 +105,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 0;
+    max-height: 84.5px;;
 }
 .nav-evento h1{
+        width: auto;
         margin: 0px 10px;
+        font-size: 80px;
 }
 .nav-evento button{
     background: none;
@@ -128,6 +133,7 @@
     width: auto;
     height: auto;
     ul{
+        font-size: 24px;
         margin: 0.4rem 0;
         padding: 0px 1rem  ;
     }

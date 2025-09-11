@@ -26,14 +26,14 @@ document.addEventListener ('DOMContentLoaded', () => {
 //RENDERIZADO DE EVENTOS EN LA VENTANA A LA DERECHA
 
 const eventosLinea = [
-    { fecha: "1930/40", dato: "Raymond Scott, pionero en la música electrónica y experimental." },
-    { fecha: "1950", dato: "Illiac Suite: primera pieza generada por computadora.Raymond Scott desarrolla el Electronium, máquina que genera música a partir de patrones aleatorios." },
-    { fecha: "1960/70", dato: "MUSIC-N: programas pioneros de síntesis digital (Max Mathews).Primer canto sintético en computadora (“Daisy Bell”), inspiración para HAL 9000." },
-    { fecha: "1980", dato: "Music Mouse (Laurie Spiegel): software de composición algorítmica en tiempo real para músicos experimentales." },
-    { fecha: "1990", dato: "Proyectos académicos de síntesis de canto (Fraunhofer, MBROLA, DECtalk)." },
-    { fecha: "2000", dato: "Vocaloid (Yamaha): software de síntesis vocal realista.Hatsune Miku: primera estrella pop virtual masiva con conciertos y fandom global." },
-    { fecha: "2010", dato: "Flow Machines (Daddy 's Car): primer tema pop compuesto por IA con notoriedad mundial." },
-    { fecha: "2020", dato: "Expansión de la IA musical:AIVA: compositora IA para bandas sonoras.FN Meka: rapero virtualIA.Modelos modernos (OpenAI Jukebox, Google MusicLM, Suno) generan canciones completas con letra y música." }
+    { fecha: "1930/40", dato: "Raymond Scott, pionero en la música electrónica y experimental.", img: "data/calendario/1930.png" },
+    { fecha: "1950", dato: "Illiac Suite: primera pieza generada por computadora.Raymond Scott desarrolla el Electronium, máquina que genera música a partir de patrones aleatorios.", img: "data/calendario/1950.png" },
+    { fecha: "1960/70", dato: "MUSIC-N: programas pioneros de síntesis digital (Max Mathews).Primer canto sintético en computadora (“Daisy Bell”), inspiración para HAL 9000.", img: "data/calendario/1960.png" },
+    { fecha: "1980", dato: "Music Mouse (Laurie Spiegel): software de composición algorítmica en tiempo real para músicos experimentales.", img: "data/calendario/1980.png" },
+    { fecha: "1990", dato: "Proyectos académicos de síntesis de canto (Fraunhofer, MBROLA, DECtalk).", img: "data/calendario/1990.png" },
+    { fecha: "2000", dato: "Vocaloid (Yamaha): software de síntesis vocal realista.Hatsune Miku: primera estrella pop virtual masiva con conciertos y fandom global.", img: "data/calendario/2000.png" },
+    { fecha: "2010", dato: "Flow Machines (Daddy 's Car): primer tema pop compuesto por IA con notoriedad mundial.", img: "data/calendario/2010.png" },
+    { fecha: "2020", dato: "Expansión de la IA musical:AIVA: compositora IA para bandas sonoras.FN Meka: rapero virtualIA.Modelos modernos (OpenAI Jukebox, Google MusicLM, Suno) generan canciones completas con letra y música.", img: "data/calendario/2020.png" }
 ];
 
 const datos = document.getElementById('cuerpo-eventos');
@@ -60,7 +60,7 @@ datos.innerHTML = `
                 <ul>
                     <li>${datoVisible.dato}</li>
                 </ul>
-                <img src="https://placehold.co/246x282" alt="">
+                <img src=${datoVisible.img} alt="">
             </div>
 `;
 
