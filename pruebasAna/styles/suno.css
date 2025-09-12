@@ -113,6 +113,7 @@ body{
 }
 .ventana[data-ventana="suno"] .ventana-body{
     h1{
+        text-align: center;
         margin: 0px;
     }
     width: auto;
@@ -130,7 +131,17 @@ body{
     padding: 0px 10px;
     }
 
+.categoria-desplegable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
     .desplegable{
+        background-color: #3068B0;
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -138,6 +149,7 @@ body{
         width: calc(100% / 3 - 15.55% / 3);
         height: auto;
         cursor: pointer;
+        padding: 5px 10px;
         img{
             width: 80px;
             height: auto;
