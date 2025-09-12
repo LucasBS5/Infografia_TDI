@@ -212,6 +212,7 @@ function fnCheck(userAnswer) {
   }
 
 // ---------- LOGICA DE REPRODUCTOR MP3 ----------
+
 const info = [
     { img: "/pruebasLucas/imagenes/reproductor/portada-2.png", cancionNombre: "DUST ON THE WIND", artista: "THE VELVET SUNDOWN", cancion: "/musica/dustonthewind.mp3"},
     { img: "/pruebasLucas/imagenes/reproductor/portada-3.jpg", cancionNombre: "Rumba Congo", artista: "Concubana", cancion: "/musica/rumbacongo.mp3"},
@@ -227,6 +228,8 @@ const portadaDerecha = document.getElementById("cancionElegidaImg");
 const tituloDerecha = document.getElementById("tituloDerecha");
 const artistaDerecha = document.getElementById("artistaDerecha");
 
+const advertencia = document.getElementById("warningCopy");
+
 function cargarCancion(i) {
     const cancion = info[i];
     index = i;
@@ -234,6 +237,12 @@ function cargarCancion(i) {
     if (!cancion) {
         console.error("No se encontró la canción en el índice", i);
         return;
+    }
+
+    if (i === 3) {
+        advertencia.style.display = "block";
+    } else {
+        advertencia.style.display = "none";
     }
 
     player2.src = cancion.cancion;

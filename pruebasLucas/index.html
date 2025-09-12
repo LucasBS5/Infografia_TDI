@@ -21,37 +21,37 @@
     <div class="icons">
         <div class="icons-left">
             <div class="icon-item">
-                <img class="icon__item" src="icon/recycle_bin_full.ico" alt="">
+                <img class="icon__item" src="icon/folder_open.ico">
                 <p>Carpeta</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item aplicaciones" data-ventana="navegador" src="icon/chrome.ico" alt="">
+                <img class="icon__item aplicaciones" data-ventana="navegador" src="icon/chrome.ico">
                 <p>Chrome</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item aplicaciones" data-ventana="juego" src="icon/minecraft.ico" alt="">
+                <img class="icon__item aplicaciones" data-ventana="juego" src="icon/minecraft.ico">
                 <p>Juego</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item aplicaciones" data-ventana="calendar" src="icon/calendar.ico" alt="">
+                <img class="icon__item aplicaciones" data-ventana="calendar" src="icon/calendar.ico">
                 <p>Calendario</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                <img class="icon__item aplicaciones" src="icon/world.ico">
                 <p>Suno Ai</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                <img class="icon__item aplicaciones" src="icon/world.ico">
                 <p>Udio Ai</p>
             </div>
             <div class="icon-item">
-                <img class="icon__item aplicaciones" src="icon/world.ico" alt="">
+                <img class="icon__item aplicaciones" src="icon/world.ico">
                 <p>Bandlab</p>
             </div>
         </div>
         <div class="icons-right">
             <div class="icon-item">
-                <img class="icon__item aplicaciones" data-ventana="musica" src="icon/music.ico" alt="">
+                <img class="icon__item aplicaciones" data-ventana="musica" src="icon/music.ico">
                 <p>Musica</p>
             </div>
         </div>
@@ -84,24 +84,24 @@
                 <div class="coldplay">
                     <img src="../img/artist.jpg" alt="">
                     <div class="texto-comparacion">
-                        <h3>COLDPLAY</h3>
-                        <h5>Mas de 90 Millones de oyentes mensuales en Spotify</h5>
+                        <h3 class="titulo-comparacion">COLDPLAY</h3>
+                        <h5 class="subtitulo-comparacion">Mas de 90 Millones de oyentes mensuales en Spotify</h5>
                         <button>Ver más...</button>
                     </div>
                 </div>
                 <div class="velvet">
                     <img src="../img/artist.jpg" alt="">
                     <div class="texto-comparacion">
-                        <h3>THE VELVET SUNDOWND</h3>
-                        <h5>Al rededor de 1 Millon de oyentes mensuales en Spotify</h5>
+                        <h3 class="titulo-comparacion">THE VELVET SUNDOWND</h3>
+                        <h5 class="subtitulo-comparacion">Al rededor de 1 Millon de oyentes mensuales en Spotify</h5>
                         <button>Ver más...</button>
                     </div>
                 </div>
                 <div class="velvet">
                     <img src="../img/artist.jpg" alt="">
                     <div class="texto-comparacion">
-                        <h3>IA VS HUMANO</h3>
-                        <h5>Comparación de cuánto tiempo invierte un artista que utiliza IA en la creación de música con uno que no, qué cantidad de música produce en cierto tiempo y las limitaciones de cada grupo y sus fortalezas.</h5>
+                        <h3 class="titulo-comparacion">IA VS HUMANO</h3>
+                        <h5 class="subtitulo-comparacion">Comparación de cuánto tiempo invierte un artista que utiliza IA en la creación de música con uno que no, qué cantidad de música produce en cierto tiempo y las limitaciones de cada grupo y sus fortalezas.</h5>
                         <button class="cambio-btn" data-pagina="about">Ver más...</button>
                     </div>
                 </div>
@@ -154,8 +154,8 @@
         </div>
         <div class="ventana-body">
             <div class="juego-inicio" id="portada">
-                <h2>IA VS HUMANO</h2>
-                <h4>Escuchá con mucha atención y adiviná cual es el real</h4>
+                <h2 class="titulo-juego">IA VS HUMANO</h2>
+                <h4 class="subtitulo-juego">Escuchá con mucha atención y adiviná cual es el real</h4>
                 <div class="juego-portada">
                     <div class="juego-columna">
                         <img src="imagenes/music-portada1.png">
@@ -178,8 +178,8 @@
                             <audio id="player" controls></audio>
                         </div>
                         <div class="juego-opcion">
-                            <button id="check-ia" class="btn-ai">ARTIFICIAL</button>
-                            <button id="check-humano" class="btn-humano">HUMANO</button>
+                            <button id="check-ia" class="btn-juego">ARTIFICIAL</button>
+                            <button id="check-humano" class="btn-juego">HUMANO</button>
                         </div>
                         <div class="racha">
                             <h4>RACHA</h4>
@@ -191,26 +191,10 @@
                 <button id="nextquestion" class="botones-juego">SIGUIENTE</button>
             </div>
             <div id="final" class="juego-fin">
-                <h2>IA VS HUMANO</h2>
-                <h4>Escuchá con mucha atención y adiviná cual es el real</h4>
+                <h2 class="titulo-juego">IA VS HUMANO</h2>
+                <h4 class="subtitulo-juego">Escuchá con mucha atención y adiviná cual es el real</h4>
                 <button class="botones-juego" id="reset" style="display: none;">Volver a jugar</button>
             </div>
-        </div>
-    </div>
-
-    <!---------- APLICACIÓN CALENDARIO ---------->
-
-    <div class="ventana" data-ventana="calendar">
-        <div class="titulo-barra barra">
-            <h5>Calendario</h5>
-            <div class="controles-barra">
-                <button class="controles__item minimizar">—</button>
-                <button class="controles__item maximizar">☐</button>
-                <button class="controles__item close-btn">✕</button>
-            </div>  
-        </div>
-        <div class="ventana-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sed minima. Cupiditate, velit deleniti eligendi veritatis minus sit, quas expedita magni veniam facilis, et recusandae numquam corporis harum repudiandae a.</p>
         </div>
     </div>
 
@@ -258,8 +242,8 @@
             <div class="cancion-left" data-index="4">
                 <img class="reproductor__portada" src="/pruebasLucas/imagenes/reproductor/portada-7.webp">
                 <div>
-                    <h4>Passarella</h4>
-                    <h6>Emilia, Six sex</h6>
+                    <h4 class="titulo-left">Passarella</h4>
+                    <h6 class="artista-left">Emilia, Six sex</h6>
                 </div>
             </div>
         </div>
@@ -279,9 +263,9 @@
     </div>
 </div>
 
-<div class="ventana" data-ventana="copyright-warning">
+<div id="warningCopy" class="ventana" data-ventana="copyright-warning">
     <div class="titulo-barra barra">
-        <h5>Musica</h5>
+        <h5>ADVERTENCIA</h5>
         <div class="controles-barra">
             <button class="controles__item minimizar">—</button>
             <button class="controles__item maximizar">☐</button>
@@ -292,7 +276,7 @@
         <div id="copyright-warning" class="copyright-pop">
         <div class="advertencia">
             <img class="warning-img" src="imagenes/warning.png">
-            <p>Esta canción incluye contenido de "Bad Bunny" que lo ha bloqueado por motivos de derechos de autor</p>
+            <p>Esta canción incluye contenido de "Bad Bunny" quien lo ha bloqueado por motivos de derechos de autor</p>
         </div>
         <div class="info-copy">
             <img class="copy-img" src="imagenes/copy.png">
@@ -317,6 +301,7 @@
             <span class="clock">12:34 PM</span>
         </div>
     </div>
+    <script src="../pruebasLucas/scripts/calendario.js"></script>
     <script src="../pruebasLucas/scripts/script-prueba.js"></script>
 </body>
 </html>
