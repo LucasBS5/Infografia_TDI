@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('click', () => {
         ventana.style.display = 'none';
         player.pause();
+        player2.pause();
     });
 
     // ---------- ARRASTRAR VENTANA ----------
@@ -212,16 +213,16 @@ function fnCheck(userAnswer) {
 
 // ---------- LOGICA DE REPRODUCTOR MP3 ----------
 const info = [
-    { img: "../imagenes/reproductor/portada-2.png", cancionNombre: "DUST ON THE WIND", artista: "THE VELVET SUNDOWN", cancion: "/musica/dustonthewind.mp3"},
-    { img: "../imagenes/reproductor/portada-3.jpg", cancionNombre: "Rumba Congo", artista: "Concubana", cancion: "/musica/rumbacongo.mp3"},
-    { img: "../imagenes/reproductor/portada-4.jpg", cancionNombre: "Havana Nights in Paris", artista: "Concubana", cancion: "/musica/havana.mp3"},
-    { img: "../imagenes/reproductor/portada-5.jpg", cancionNombre: "Nostalgia", artista: "Bad Bunny", cancion: "/musica/nostalgia.mp3"},
-    { img: "../imagenes/reproductor/portada-7.webp", cancionNombre: "Pasarella", artista: "Emilia, Six sex", cancion: "/musica/pasarella.mp3"}
+    { img: "/pruebasLucas/imagenes/reproductor/portada-2.png", cancionNombre: "DUST ON THE WIND", artista: "THE VELVET SUNDOWN", cancion: "/musica/dustonthewind.mp3"},
+    { img: "/pruebasLucas/imagenes/reproductor/portada-3.jpg", cancionNombre: "Rumba Congo", artista: "Concubana", cancion: "/musica/rumbacongo.mp3"},
+    { img: "/pruebasLucas/imagenes/reproductor/portada-4.jpg", cancionNombre: "Havana Nights in Paris", artista: "Concubana", cancion: "/musica/havana.mp3"},
+    { img: "/pruebasLucas/imagenes/reproductor/portada-1.jpg", cancionNombre: "Nostalgia", artista: "Bad Bunny", cancion: "/musica/nostalgia.mp3"},
+    { img: "/pruebasLucas/imagenes/reproductor/portada-7.webp", cancionNombre: "Pasarella", artista: "Emilia, Six sex", cancion: "/musica/pasarella.mp3"}
 ];
 
 //REPRODUCIR LA MUSICA
 let index = 0; // cancion actual
-const player = document.getElementById("player-mp3");
+const player2 = document.getElementById("player-mp3");
 const portadaDerecha = document.getElementById("cancionElegidaImg");
 const tituloDerecha = document.getElementById("tituloDerecha");
 const artistaDerecha = document.getElementById("artistaDerecha");
@@ -235,9 +236,9 @@ function cargarCancion(i) {
         return;
     }
 
-    player.src = cancion.cancion;
-    player.load();
-    player.play();
+    player2.src = cancion.cancion;
+    player2.load();
+    player2.play();
 
     portadaDerecha.src = cancion.img;
     tituloDerecha.textContent = cancion.cancionNombre;
@@ -246,10 +247,10 @@ function cargarCancion(i) {
 
 // Botones
 document.getElementById("play").addEventListener("click", () => {
-    if (player.paused) {
-        player.play();
+    if (player2.paused) {
+        player2.play();
     } else {
-        player.pause();
+        player2.pause();
     }
 });
 

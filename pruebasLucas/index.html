@@ -168,14 +168,14 @@
                 </div>
                 <button id="jugar" class="botones-juego">JUGAR</button>
             </div>
-                <div id="questionbox" class="question">
-                    <span id="questiontext"></span>
+            <div id="questionbox" class="question">
+                <span id="questiontext"></span>
                     <div class="juego-opciones">
                         <div class="juego-disco">
-                                <img id="imagendisco" src="imagenes/music1.png">
-                                <h3 id="titulodisco">Nombre tema</h3>
-                                <h5 id="nombrebanda">Nombre banda</h5>
-                                <audio id="player" controls></audio>
+                            <img id="imagendisco" src="imagenes/music1.png">
+                            <h3 id="titulodisco">Nombre tema</h3>
+                            <h5 id="nombrebanda">Nombre banda</h5>
+                            <audio id="player" controls></audio>
                         </div>
                         <div class="juego-opcion">
                             <button id="check-ia" class="btn-ai">ARTIFICIAL</button>
@@ -187,9 +187,9 @@
                             <h4 id="racha">0/0</h4>
                         </div>
                     </div>
-                    <div id="questionresponse"></div>
-                    <button id="nextquestion" class="botones-juego">SIGUIENTE</button>
-                </div>
+                <div id="questionresponse"></div>
+                <button id="nextquestion" class="botones-juego">SIGUIENTE</button>
+            </div>
             <div id="final" class="juego-fin">
                 <h2>IA VS HUMANO</h2>
                 <h4>Escuchá con mucha atención y adiviná cual es el real</h4>
@@ -228,35 +228,35 @@
     <div class="ventana-body">
         <div class="columna__canciones">
             <div class="cancion-left" data-index="0">
-                <img class="reproductor__portada" src="imagenes/reproductor/portada-2.png">
+                <img class="reproductor__portada" src="/pruebasLucas/imagenes/reproductor/portada-2.png">
                 <div>
-                    <h4>Dust on the wind</h4>
-                    <h6>The Velvet Sundown</h6>
+                    <h4 class="titulo-left">Dust on the wind</h4>
+                    <h6 class="artista-left">The Velvet Sundown</h6>
                 </div>
             </div>
             <div class="cancion-left" data-index="1">
-                <img class="reproductor__portada" src="imagenes/reproductor/portada-3.jpg">
+                <img class="reproductor__portada" src="/pruebasLucas/imagenes/reproductor/portada-3.jpg">
                 <div>
-                    <h4>Rumba Congo</h4>
-                    <h6>Concubana</h6>
+                    <h4 class="titulo-left">Rumba Congo</h4>
+                    <h6 class="artista-left">Concubana</h6>
                 </div>
             </div>
             <div class="cancion-left" data-index="2">
-                <img class="reproductor__portada" src="imagenes/reproductor/portada-4.jpg">
+                <img class="reproductor__portada" src="/pruebasLucas/imagenes/reproductor/portada-4.jpg">
                 <div>
-                    <h4>Havana Nights in Paris</h4>
-                    <h6>Concubana</h6>
+                    <h4 class="titulo-left">Havana Nights in Paris</h4>
+                    <h6 class="artista-left">Concubana</h6>
                 </div>
             </div>
             <div class="cancion-left" data-index="3">
-                <img class="reproductor__portada" src="imagenes/reproductor/portada-5.jpg">
+                <img class="reproductor__portada" src="/pruebasLucas/imagenes/reproductor/portada-1.jpg">
                 <div>
-                    <h4>Nostalgia</h4>
-                    <h6>Bad Bunny</h6>
+                    <h4 class="titulo-left">Nostalgia</h4>
+                    <h6 class="artista-left">Bad Bunny</h6>
                 </div>
             </div>
             <div class="cancion-left" data-index="4">
-                <img class="reproductor__portada" src="imagenes/reproductor/portada-7.webp">
+                <img class="reproductor__portada" src="/pruebasLucas/imagenes/reproductor/portada-7.webp">
                 <div>
                     <h4>Passarella</h4>
                     <h6>Emilia, Six sex</h6>
@@ -264,16 +264,41 @@
             </div>
         </div>
         <div class="columna__cancion">
-            <img id="cancionElegidaImg" src="imagenes/reproductor/portada-1.jpg">
-            <h4 id="tituloDerecha">Nombre tema</h4>
-            <h6 id="artistaDerecha">Nombre Artista</h6>
-            <audio id="player-mp3" controls></audio>
+            <img id="cancionElegidaImg" src="/pruebasLucas/imagenes/reproductor/portada-1.jpg">
+            <div class="cancionElegidaText">
+                <h4 id="tituloDerecha" class="tituloDer">Nombre tema</h4>
+                <h6 id="artistaDerecha" class="artistaDer">Nombre Artista</h6>
+            </div>
+            <audio id="player-mp3"></audio>
             <div class="controles">
-                <button id="prev">⏮️</button>
-                <button id="play">⏯️</button>
-                <button id="next">⏭️</button>
+                <button id="prev"><svg width="24" height="22" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 12L10.5 6L19.5 0V12ZM9.5 12L0.5 6L9.5 0V12Z" fill="#1D1B20"/></svg></button>
+                <button id="play"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="15" height="15" fill="#1D1B20"/></svg></button>
+                <button id="next"><svg width="24" height="22" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 12V0L9.5 6L0.5 12ZM10.5 12V0L19.5 6L10.5 12Z" fill="#1D1B20"/></svg></button>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="ventana" data-ventana="copyright-warning">
+    <div class="titulo-barra barra">
+        <h5>Musica</h5>
+        <div class="controles-barra">
+            <button class="controles__item minimizar">—</button>
+            <button class="controles__item maximizar">☐</button>
+            <button class="controles__item close-btn">✕</button>
+        </div>
+    </div>
+    <div class="ventana-body">
+        <div id="copyright-warning" class="copyright-pop">
+        <div class="advertencia">
+            <img class="warning-img" src="imagenes/warning.png">
+            <p>Esta canción incluye contenido de "Bad Bunny" que lo ha bloqueado por motivos de derechos de autor</p>
+        </div>
+        <div class="info-copy">
+            <img class="copy-img" src="imagenes/copy.png">
+            <a href=""><h6>Más información</h6></a>
+        </div>
+    </div>
     </div>
 </div>
 
