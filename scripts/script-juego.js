@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () =>{ 
+
+  //hola
 // ======================== ======================== 
 // SCRIPT DEL JUEGO.
 
@@ -132,3 +135,5 @@ function fnCheck(userAnswer) {
     respuesta.classList.remove('correct');
     }
 }
+
+});

@@ -78,11 +78,4 @@ cargarCancion(index);
 
 
 
-
-
-
-
-
-
-
 });
