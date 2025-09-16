@@ -1,0 +1,153 @@
+
+/* -------------- ESTILOS DEL ESCRITORIO ------------------------------ */
+/*----General----*/
+html{
+    background-color: darkgray;
+    scroll-behavior: auto;
+}
+
+/*----Aplicaciones----*/
+.iconos-escritorio{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.icon-app{
+    background: none;
+    border: none;
+    border-radius: none;
+    padding: 0.5rem;
+    width: 80px;
+    height: auto;
+    align-items: center;
+}
+
+.icon-app img{
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+.icon-app p{
+    margin: 10px 0;
+    font-family: "Micro 5";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+    text-align: center;
+
+
+}
+
+/* ---------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
+/*----Ventanas----*/
+.ventana{
+    /* visibility: hidden;
+    opacity: 0; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    border: 7px solid #fcfcfc;
+    background-color: #F6F2E4;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.ventana:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.dato{
+    padding: 1rem;
+}
+
+/*----Barra de navegación----*/
+.nav-barra{
+    position: sticky;
+    top: 0;
+    height: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+    align-items: center;
+    background: var(--barra-de-arriba, linear-gradient(90deg, #224A7D 2.88%, #3068B0 27.4%, #3E86E3 100%));
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.titulo-barra{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.icon-barra{
+    width: 30px;
+    height: 30px;
+    margin-right: 0.3rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.name-barra{
+    font-family: "Micro 5";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    h5{
+        margin: 0px;
+    }
+}
+
+.controles-barra{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    width: 64px;
+    height: 21px;
+}
+
+.control-item{
+    background: #FFF;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL CALENDARIO ---------- */
+.ventana[data-ventana="calendario"] {
+    background: #F6F2E4;
+    width: 414px;
+    height: 609px;
+}
+
+/* ---------- ESTILOS DE LA VENTANA JUEGO ---------- */
+.ventana[data-ventana="juego"] {
+    background: #F6F2E4;
+    width: 414px;
+    height: 609px;
+}
+
+/* ---------- ESTILOS DE LA VENTANA DEL FOLDER ---------- */
+.ventana[data-ventana="folder"] {
+    background: #F6F2E4;
+    width: 414px;
+    height: 609px;
+}

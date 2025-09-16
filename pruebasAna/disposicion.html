@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/calendario1.css">
+
+</head>
+<body>
+<!---------- BARRA DE TAREAS ---------->
+
+    <div class="taskbar">
+        <div class="taskbar-izq">
+            <div class="inicio-container">
+                <div id="inicio-btn" class="inicio">
+                    <img src="https://placehold.co/110x41">
+                </div>
+            </div>
+        </div>
+        <div class="taskbar-der">
+            <span class="clock">12:34 PM</span>
+        </div>
+    </div>
+
+    <!---------- ICONOS DE ESCRITORIO (APLICACIONES) ---------->
+<div class="iconos-escritorio">
+
+    <div class="icon aplicaciones" data-ventana="documentos">
+        <img src="https://placehold.co/60x60" alt="icono documentos">
+        <p>Documentos</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="juego">
+        <img src="https://placehold.co/60x60" alt="icono juego">
+        <p>Juego</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="calendar">
+        <img src="https://placehold.co/60x60" alt="icono calendario">
+        <p>Calendario</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="instagram">
+       <a href="https://www.instagram.com/musica.ia.infografia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="https://placehold.co/60x60" alt="icono instagram">
+        <p>Instagram</p></a> 
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="suno">
+        <img src="https://placehold.co/60x60" alt="icono suno">
+        <p>Suno</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="udio">
+        <img src="https://placehold.co/60x60" alt="icono udio">
+        <p>Udio</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="bandlab">
+        <img src="https://placehold.co/60x60" alt="icono bandlab">
+        <p>Bandlab</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="internet">
+        <img src="https://placehold.co/60x60" alt="icono internet">
+        <p>Internet</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="musica">
+        <img src="https://placehold.co/60x60" alt="icono musica">
+        <p>Musica</p>
+    </div>
+
+    <div class="icon aplicaciones" data-ventana="copyright">
+        <img src="https://placehold.co/60x60" alt="icono copyright">
+        <p>Copyright</p>
+</div>
+</div>
+
+<!--------- APLICACIÓN CALENDARIO --------->
+
+    <!-------- Línea del tiempo --------->
+
+    <div class="ventana" data-ventana="calendar">
+        <div class="titulo-barra barra">
+            <h5>CALENDARIO</h5>
+            <div class="controles-barra">
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
+            </div>  
+        </div>
+        <div class="ventana-body">
+            <h1>LÍNEA DEL TIEMPO</h1>
+            <div class="contenedor-eventos">
+                <div class="evento">
+                    <h3>1930/40</h3>
+                    <img class="img-overlay" src="data/calendario/1930.png" alt="">
+                    <div class="mensaje-oculto"><h2>1930/40</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>1950</h3>
+                    <img class="img-overlay" src="data/calendario/1950.png" alt="">
+                    <div class="mensaje-oculto"><h2>1950</h2></div>
+                </div>
+                 <div class="evento">
+                    <h3>1960/70</h3>
+                    <img class="img-overlay" src="data/calendario/1960.png" alt="">
+                    <div class="mensaje-oculto"><h2>1960/70</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>1980</h3>
+                    <img class="img-overlay" src="data/calendario/1980.png" alt="">
+                    <div class="mensaje-oculto"><h2>1980</h2></div>
+                </div>
+                 <div class="evento">
+                    <h3>1990</h3>
+                    <img class="img-overlay" src="data/calendario/1990.png" alt="">
+                    <div class="mensaje-oculto"><h2>1990</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>2000</h3>
+                    <img class="img-overlay" src="data/calendario/2000.png" alt="">
+                    <div class="mensaje-oculto"><h2>2000</h2></div>
+                </div>
+                 <div class="evento">
+                    <h3>2010</h3>
+                    <img class="img-overlay" src="data/calendario/2010.png" alt="">
+                    <div class="mensaje-oculto"><h2>2010</h2></div>
+                </div>
+                <div class="evento">
+                    <h3>2020</h3>
+                    <img class="img-overlay" src="data/calendario/2020.png" alt="">
+                    <div class="mensaje-oculto"><h2>2020</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Eventos de la línea del tiempo--------->
+    <div class="ventana" data-ventana="calendar-eventos">
+        <div class="titulo-barra barra">
+            <h5>CALENDARIO</h5>
+            <div class="controles-barra">
+                <button class="controles__item minimizar">—</button>
+                <button class="controles__item maximizar">☐</button>
+                <button class="controles__item close-btn">✕</button>
+            </div>  
+        </div>
+        <div class="ventana-body" id="cuerpo-eventos"></div>
+    </div>
+
+
+
+
+</body>
+
+
+<script src="scripts/main.js"></script>
+
+<script src="scripts/calendar.js"></script>
+
+</html>

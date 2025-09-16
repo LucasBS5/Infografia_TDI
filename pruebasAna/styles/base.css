@@ -1,0 +1,78 @@
+/* ======================== ======================== */
+/* ESTILOS DE BASE: DOCUMENTO, TIPOGRAFÍA, ICONOS, VENTANAS GENERAL, ETC.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px; 
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Oculta la barra de scroll */
+}
+
+body{
+    margin: 1vh 2vw;
+    background-image: url(/pruebasAna/img/pantalla_fondo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+    overflow: hidden;
+    font-family: "Jersey 10", sans-serif;
+}
+
+
+
+/* ---------- ESTILOS DE LAS VENTANAS EN GENERAL ---------- */
+
+.ventana{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 80%;
+    background-color: #F6F2E4;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white #808080 #808080 white;
+}
+
+.ventana-body{
+    padding: 1rem;
+}
+
+.titulo-barra{
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.3rem;
+    background-color: #193887;
+    background: linear-gradient(to right, #224a7d 3%,#3068b0 27% ,#3e86e3 100%);
+}
+
+.titulo-barra h5{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #e9eae7;
+}
+
+.controles-barra{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.controles-barra button{
+    width: 1.2rem;
+    height: 1.2rem;
+    box-shadow: 1px 1px 2px #00000094;
+}
